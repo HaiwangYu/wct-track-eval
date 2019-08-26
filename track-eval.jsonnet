@@ -108,8 +108,8 @@ local parallel_pipes = [
                magnify_pipes5[n],
              ],
              'parallel_pipe_%d' % n)
-  // for n in std.range(0, std.length(tools.anodes) - 1)
-  for n in std.range(2, 2)
+  for n in std.range(0, std.length(tools.anodes) - 1)
+  // for n in std.range(2, 2)
 ];
 local outtags = ['raw%d' % n for n in std.range(0, std.length(tools.anodes) - 1)];
 local parallel_graph = f.fanpipe('DepoSetFanout', parallel_pipes, 'FrameFanin', 'sn_mag_nf', outtags);
