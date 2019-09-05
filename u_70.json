@@ -1,0 +1,9 @@
+local wc = import 'wirecell.jsonnet';
+{
+  rays: [
+    {
+      head: wc.point(0, 3, 3.5, wc.m),
+      tail: wc.point(2.81908, 2.37537, 4.31403, wc.m),
+    },
+  ]
+}
